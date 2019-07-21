@@ -1,0 +1,86 @@
+.empty-list{
+  margin-top: 30px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.tasks {
+  display: block;
+  margin-top: 30px;
+}
+
+.tasks li {
+  display: block;
+  border-bottom: 1px solid #eee;
+  margin: 10px 0;
+  padding: 20px 5px 30px;
+  cursor: pointer;
+}
+
+.tasks li:hover{
+  background-color: #eaeef1;
+}
+
+/* .tasks li:hover > .task h2,
+.tasks li:hover > .task span {
+  color: #428bca;
+} */
+
+.task-status {
+  float: left;
+  vertical-align: middle;
+  font-size: 18px;
+  display: inline-block;
+  padding: 10px;
+  color: #2e5cdb;
+}
+
+.task {
+  width: 80%;
+  float: left;
+  vertical-align: middle;
+}
+
+.task h2 {
+  color: #444444;
+  overflow-wrap: break-word;
+  font-weight: 500;
+}
+
+.task span {
+  color: #888888;
+}
+
+.task-completed {
+  text-decoration: line-through;
+}
+
+.tasks li button {
+  float: right;
+  width: 45px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 18px;
+  color: white;
+  vertical-align: middle;
+  margin: 0 2px;
+}
+
+.edit-task {
+  background: #2e5cdb;
+}
+
+.edit-task:hover {
+  background: #2f00ff;
+}
+
+.remove-task {
+  background: #c23a30;
+}
+
+.remove-task:hover {
+  background: #ff1100;
+}

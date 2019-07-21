@@ -1,26 +1,34 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { Header } from './components/header/header';
+import { TodoApp } from './components/todoApp/todoApp';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      inputSearchData: '',
+    };
+    this.todoAppRef = React.createRef();
+    this.searchInput = this.searchInput.bind(this);
+  }
+
+  searchInput(inputSearchData) {
+    this.setState({
+      inputSearchData: inputSearchData,
+    },this.todoAppRef.current.searchInputData);
+  }
+
+  render() {
+    return (
+      <div className="container">
+        <Header searchInput={this.searchInput} />
+        <TodoApp 
+        inputSearchData={this.state.inputSearchData} 
+        ref={this.todoAppRef}/>
+      </div>
+    );
+  }
 }
-
 export default App;

@@ -1,0 +1,41 @@
+.header {
+  background-color: #1063a7;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.header h1 {
+  color: #ffffff;
+  vertical-align: middle;
+  line-height: 32px;
+  width: 40%;
+  display: inline-block;
+  margin-right: 5%;
+}
+
+.search-form {
+  width: 55%;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.search-form input {
+  display: block;
+  padding: 5px 10px;
+  font-size: 16px;
+  outline: 0;
+  width: 40%;
+  border: none;
+  background-color: #023b699c;
+  color: white;
+  float: right;
+}
+
+.search-form input:focus {
+  width: 100%;
+}
+
+.search-form input::placeholder {
+  color: white;
+  opacity: 1; /* Firefox */
+}
