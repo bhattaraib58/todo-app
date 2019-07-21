@@ -17,16 +17,16 @@ class App extends React.Component {
   searchInput(inputSearchData) {
     this.setState({
       inputSearchData: inputSearchData,
-    },this.todoAppRef.current.searchInputData);
+    }, this.todoAppRef.current.searchInputData);
   }
 
   render() {
     return (
       <div className="container">
         <Header searchInput={this.searchInput} />
-        <TodoApp 
-        inputSearchData={this.state.inputSearchData} 
-        ref={this.todoAppRef}/>
+        <TodoApp
+          inputSearchData={this.state.inputSearchData}
+          ref={this.todoAppRef} />
       </div>
     );
   }
