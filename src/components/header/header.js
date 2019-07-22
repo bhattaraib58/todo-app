@@ -1,7 +1,7 @@
 import React from 'react';
 import './header.css';
 
-export class Header extends React.Component {
+class Header extends React.Component {
   constructor(props) {
     super(props);
     this.handleSearchSubmit = this.handleSearchSubmit.bind(this);
@@ -34,3 +34,5 @@ export class Header extends React.Component {
     );
   }
 }
+
+export default Header;
