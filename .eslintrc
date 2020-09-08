@@ -14,18 +14,8 @@
   "plugins": ["react", "react-hooks", "prettier"],
   "rules": {
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
-    "require-jsdoc": [
-      "error",
-      {
-        "require": {
-          "FunctionDeclaration": true,
-          "MethodDefinition": false,
-          "ClassDeclaration": false,
-          "ArrowFunctionExpression": true,
-          "FunctionExpression": false
-        }
-      }
-    ]
+    "require-jsdoc": "off",
+    "react/prop-types": "off"
   },
   "settings": {
     "react": {
