@@ -13,7 +13,8 @@ class Header extends React.Component {
   }
 
   handleSearchChange(e) {
-    let value = e.target.value;
+    const value = e.target.value;
+
     this.props.searchInput(value);
   }
 
@@ -24,10 +25,7 @@ class Header extends React.Component {
           <h1>TODO APP</h1>
 
           <form onSubmit={this.handleSearchSubmit} className="search-form clearfix">
-            <input type="text"
-              placeholder="Search"
-              onChange={this.handleSearchChange}
-              className="search-box" />
+            <input type="text" placeholder="Search" onChange={this.handleSearchChange} className="search-box" />
           </form>
         </div>
       </header>

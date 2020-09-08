@@ -1,9 +1,7 @@
 import React from 'react';
 
-
-export const withInputHandle = WrapperComponent => {
+export const withInputHandle = (WrapperComponent) => {
   class WithInputHandle extends React.Component {
-
     constructor(props) {
       super(props);
       this.handleSearchSubmit = this.handleSearchSubmit.bind(this);
@@ -15,16 +13,21 @@ export const withInputHandle = WrapperComponent => {
     }
 
     handleSearchChange(e) {
-      let value = e.target.value;
+      const value = e.target.value;
+
       this.props.searchInput(value);
     }
 
     render() {
-      return <WrapperComponent
-        handleSearchSubmit={this.handleSearchSubmit}
-        handleSearchChange={this.handleSearchChange}
-        {...this.props} />
+      return (
+        <WrapperComponent
+          handleSearchSubmit={this.handleSearchSubmit}
+          handleSearchChange={this.handleSearchChange}
+          {...this.props}
+        />
+      );
     }
   }
+
   return WithInputHandle;
 };

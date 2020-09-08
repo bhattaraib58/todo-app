@@ -14,13 +14,13 @@
   outline: 0;
 }
 
-.task-content form input[type="text"] {
+.task-content form input[type='text'] {
   width: 80%;
   float: left;
   border: 1px solid #dddddd;
 }
 
-.task-content form button[type="submit"] {
+.task-content form button[type='submit'] {
   width: 10%;
   float: right;
   font-size: 18px;
@@ -32,11 +32,11 @@
   border-radius: 5px;
 }
 
-.task-content form button[type="submit"]:hover {
+.task-content form button[type='submit']:hover {
   background-color: #1063a7;
 }
 
-input[type="text"]:focus {
+input[type='text']:focus {
   box-shadow: 0 0 5px rgb(75, 243, 83);
   border: 1px solid rgb(81, 238, 81);
 }
